@@ -1,0 +1,17 @@
+/* src/app/globals.css */
+body {
+    background-color: #ffffff;
+    background-image: repeating-linear-gradient(to bottom, #ffffff, #ffffff 29px, #d4eaff 30px, #d4eaff 30px),
+                      linear-gradient(to right, #ffffff, #ffffff 49px, #ffb3b3 50px, #ffb3b3 51px);
+    background-size: 100% 30px, 100% 100%;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    color: #333;
+    
+    /* === NEW RULES === */
+    /* Make sure the body takes up the full screen height and has no margin */
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    /* This will hide the vertical scrollbar */
+    overflow: hidden; 
+}

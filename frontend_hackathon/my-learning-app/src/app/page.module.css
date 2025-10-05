@@ -1,0 +1,82 @@
+/* src/app/page.module.css */
+
+/* This is the main page wrapper */
+.main {
+  position: relative; /* Essential for positioning the decorative images */
+  width: 100%;
+  height: 100vh; /* Make it take up the full screen height */
+}
+
+/* This new container will center all the main content */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Vertically centers the content */
+  align-items: center; /* Horizontally centers the content */
+  height: 100%;
+  padding: 2rem;
+  box-sizing: border-box; /* Ensures padding doesn't add to the height */
+}
+
+.title {
+  color: #d9534f;
+  font-size: 3em;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.section {
+  margin-bottom: 20px;
+  /* Ensure sections are also centered if they have multiple lines */
+  text-align: center;
+}
+
+.subtitle {
+  color: #8a2be2;
+  font-size: 1.8em;
+  margin-bottom: 20px;
+  /* New styles to align the star image with the text */
+  display: inline-flex;
+  align-items: center;
+  gap: 15px; /* Adds space between "watch video" and the star */
+}
+
+.thumbnailGrid {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center; /* This centers the thumbnails */
+}
+
+/* --- Repositioning for Decorative Elements --- */
+
+.menuIcon {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+}
+
+.profileIcon {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+
+.panda {
+  position: absolute;
+  right: 5%; /* Using percentages for better scaling */
+  bottom: 5%;
+}
+
+.flowers {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  opacity: 0.8;
+}
+
+/* The star is no longer absolutely positioned, so its old style is removed. */
+/* This class is now just for potential specific styling if needed. */
+.star {
+  /* No position: absolute needed anymore! */
+}

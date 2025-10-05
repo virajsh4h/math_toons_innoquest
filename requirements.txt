@@ -1,0 +1,15 @@
+# backend/requirements.txt
+fastapi
+uvicorn
+gunicorn  # <-- Production server
+pydantic
+python-dotenv
+google-generativeai
+elevenlabs
+boto3
+moviepy
+requests
+ffmpeg-python 
+redis>=4.0.0
+manim
+#hope render has ffmpeg or ill need to use docker 

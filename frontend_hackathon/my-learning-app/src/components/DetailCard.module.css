@@ -1,0 +1,51 @@
+/* src/components/DetailCard.module.css */
+.card {
+    border: 2px solid #888;
+    border-radius: 15px;
+    background-color: #fff;
+    width: 250px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 3px 3px 8px rgba(0,0,0,0.1);
+    position: relative;
+    padding-left: 20px; /* Space for the rings */
+}
+
+/* Simulating the notebook rings */
+.card::before {
+    content: '○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○ ○';
+    position: absolute;
+    left: 5px;
+    top: 15px;
+    line-height: 1.5;
+    font-size: 14px;
+    color: #aaa;
+    writing-mode: vertical-rl;
+}
+
+.cardHeader {
+    background-color: #e1baba;
+    padding: 15px;
+    font-size: 1.5em;
+    font-weight: bold;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    border-bottom: 2px solid #888;
+}
+
+.cardBody {
+    padding: 20px;
+    flex-grow: 1;
+}
+
+.selectDropdown {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1.2em;
+    /* This makes the select box use the app's font */
+    font-family: inherit; 
+    cursor: pointer;
+}
