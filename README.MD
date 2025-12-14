@@ -3,8 +3,7 @@
 ##### Team Name: VIZZARDS
 
 ##### Team members name:
-
-#### - Tanisha Mavle
+- Tanisha Mavle
 - Viraj Shah
 
 ##### Project name: Math-Toons
